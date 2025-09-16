@@ -33,6 +33,9 @@ To run tests, run the following command
 ```bash
   ./gradebot project1
 ```
-
+## Screenshots
+- Test Suite Screenshot can be found as "testSuite.png"
+- Usage of Gradebot Screenshot can be found as "GradeBot-Grade.png"
+  
 ## Use of AI
 To create this JWKS server, I used a series of AI prompts that guided step-by-step development using JavaScript based on the assignment guidelines. These prompts included requests to write a keystore with in-memory RSA key pairs, support for kid headers, and automatic handling of key expiration. I also asked for Express route implementations for /auth and /jwks, with correct HTTP status codes for valid and invalid requests. Additional prompts focused on writing comprehensive Jest tests, including edge cases for expired tokens, missing payload fields, and invalid signing parameters, as well as ensuring branch coverage and ensuring all tests pass. I also prompted the AI to help refactor code for clarity and maintainability, and implement proper token expiration handling.
