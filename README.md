@@ -6,6 +6,14 @@ Project for CSCE 3550
 
 - jsg0191 (JoeyRyanSuliguin@my.unt.edu)
 
+## Installation
+
+To install, run the following command
+
+```bash
+   npm install
+```
+
 ## Running The Server
 
 To run the server, run the following command
