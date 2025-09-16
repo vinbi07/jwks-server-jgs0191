@@ -1,4 +1,3 @@
-// src/routes/jwks.js
 import express from "express";
 import keystore from "../keys/keystore.js";
 
@@ -24,6 +23,17 @@ router.get("/", (req, res) => {
  */
 router.get("/error", (_req, res) => {
   res.status(500).json({ error: "forced error for test coverage" });
+});
+
+// Ensure unsupported methods are blocked
+router.all("/", (_req, res) => {
+  res.set("Allow", "GET");
+  res.status(405).json({ error: "Method Not Allowed" });
+});
+
+router.all("/error", (_req, res) => {
+  res.set("Allow", "GET");
+  res.status(405).json({ error: "Method Not Allowed" });
 });
 
 export default router;
