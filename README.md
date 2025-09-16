@@ -30,4 +30,6 @@ To run tests, run the following command
 ```bash
    npx jest --coverage
 ```
-
+```bash
+  ./gradebot project1
+```
